@@ -1,0 +1,46 @@
+import java.util.*;
+ 
+class DigitsOpr
+{
+    private int num;
+     
+    //function to get value of num
+    public void getNum(int x)
+    {
+        num=x;
+    }
+     
+    public int productDigits()
+    {
+        int n,pro;
+        n=num;  
+        pro=1;
+        while(n>0)
+        {
+            pro *=(n%10);
+            n/=10;
+        }
+        return pro;
+        }
+    End of productDigits()
+}
+ 
+public class number1
+{
+    public static void main(String []s)
+    {
+        DigitsOpr dig=new DigitsOpr();
+        int n;
+         
+        Scanner sc=new Scanner(System.in);
+         
+        //read number
+        System.out.print("Enter an +ve integer number:");
+        n=sc.nextInt();
+         
+        dig.getNum(n);
+        System.out.println("SUM of all digits: " + dig.sumDigits());
+        System.out.println("PRODUCT of all digits: " + dig.productDigits());
+         
+    }
+}
