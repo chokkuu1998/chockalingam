@@ -1,0 +1,9 @@
+Input : num = 10, start = 20, end = 40
+Output : [23, 20, 30, 33, 30, 36, 37, 27, 28, 38]
+The output contains 10 random numbers in
+range [20, 40].
+
+Input : num = 5, start = 10, end = 15
+Output : [15, 11, 15, 12, 11]
+The output contains 5 random numbers in
+range [10, 15].
