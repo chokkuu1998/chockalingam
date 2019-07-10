@@ -1,4 +1,4 @@
 import sys, string, math
-s = input()
-if s == 'Sunday' or s == 'Saturday' : print('yes')
+a = input()
+if a == 'Sunday' or a == 'Saturday' : print('yes')
 else :                                print('no')
